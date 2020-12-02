@@ -8,5 +8,11 @@ body {
 }
 
 #main {
-  padding-top: 80px;
+  padding-top: 25px;
+}
+
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
