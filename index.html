@@ -21,6 +21,30 @@
 
 <body>
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v9.0'
+        });
+      };
+  
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+  
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="109635067465153" theme_color="#67b868"
+      logged_in_greeting="Welcome to Shorbo! If you would like to place an order please send us a message."
+      logged_out_greeting="Welcome to Shorbo! If you would like to place an order please send us a message.">
+    </div>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
@@ -37,7 +61,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -67,7 +91,7 @@
           By regularly visiting their farms and overseeing their production process, we ensure 100% natural and additive free produce. 
           Our goal is to bring traditionally famous food ingredients from different corners of Bangladesh to the doorsteps of our customers. 
         </p>
-        <a href="#" class="btn btn-light">Learn More</a>
+        <a href="about.html" class="btn btn-light">Learn More</a>
       </div>
     </div>
 </div>
@@ -136,7 +160,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="resources/img/products/chilli.jpg" alt=""></a>
-              <h5 class="card-header">ঈদগড় থেকে মরিচ গুঁড়া</h5>
+              <a href="#"><h5 class="card-header">ঈদগড় থেকে মরিচ গুঁড়া</h5></a>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"><h5>৫০০ গ্রাম - ৳৩৫০</h5></li>
