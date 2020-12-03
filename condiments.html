@@ -20,12 +20,37 @@
 
 <body>
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="109635067465153" theme_color="#67b868"
+    logged_in_greeting="Welcome to Shorbo! If you would like to place an order please send us a message."
+    logged_out_greeting="Welcome to Shorbo! If you would like to place an order please send us a message.">
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <img src="resources/img/navbar/logo.png" width="80" height="60" alt="">
       <a class="navbar-brand" href="#">Shorbo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -58,14 +83,14 @@
 
         <h1 class="my-4">Categories</h1>
         <div class="list-group">
-            <a href="index.html" class="list-group-item">All Products</a>
-            <a href="spices.html" class="list-group-item">Spices</a>
-            <a href="condiments.html" class="list-group-item">Condiments</a>
-            <a href="dried_fish.html" class="list-group-item">Dried Fish (শুঁটকি)</a>
-            <a href="tea.html" class="list-group-item">Tea Leaves</a>
-            <a href="mushrooms.html" class="list-group-item">Mushrooms</a>
-          
-          
+          <a href="index.html" class="list-group-item">All Products</a>
+          <a href="spices.html" class="list-group-item">Spices</a>
+          <a href="condiments.html" class="list-group-item">Condiments</a>
+          <a href="dried_fish.html" class="list-group-item">Dried Fish (শুঁটকি)</a>
+          <a href="tea.html" class="list-group-item">Tea Leaves</a>
+          <a href="mushrooms.html" class="list-group-item">Mushrooms</a>
+
+
         </div>
 
       </div>
@@ -99,7 +124,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-          
+
         </div>
 
 
@@ -114,7 +139,9 @@
               <h5 class="card-header">ঢেঁকি ছাটা সরিষার কাসুন্দি</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>৫০০ গ্রাম - ৳১৬০</h5></li>
+                  <li class="list-group-item">
+                    <h5>৫০০ গ্রাম - ৳১৬০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -127,8 +154,12 @@
               <h5 class="card-header">সরিষার তেল</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>১/২ লিটার - ৳১৪৫ </h5></li>
-                  <li class="list-group-item"><h5>১ লিটার - ৳২৮০</h5></li>
+                  <li class="list-group-item">
+                    <h5>১/২ লিটার - ৳১৪৫ </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>১ লিটার - ৳২৮০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -141,8 +172,12 @@
               <h5 class="card-header">অর্গানিক দেশি ঘি</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>১ কেজি - ৳১৫৭৫ </h5></li>
-                  <li class="list-group-item"><h5>১/২ কেজি - ৳৮০০</h5></li>
+                  <li class="list-group-item">
+                    <h5>১ কেজি - ৳১৫৭৫ </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>১/২ কেজি - ৳৮০০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -155,7 +190,9 @@
               <h5 class="card-header">হোমমেড আমের আচার</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>৪০০ গ্রাম - ৳৩৯০</h5></li>
+                  <li class="list-group-item">
+                    <h5>৪০০ গ্রাম - ৳৩৯০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -168,8 +205,12 @@
               <h5 class="card-header">কালোজিরা তেল</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>১০০ মিলি - ৳৪০০</h5></li>
-                  <li class="list-group-item"><h5>২৫০ মিলি - ৳৮৫০</h5></li>
+                  <li class="list-group-item">
+                    <h5>১০০ মিলি - ৳৪০০</h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>২৫০ মিলি - ৳৮৫০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -182,7 +223,9 @@
               <h5 class="card-header">লিচি ফুলের মধু</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>৫০০ মিলি - ৳৬০০</h5></li>
+                  <li class="list-group-item">
+                    <h5>৫০০ মিলি - ৳৬০০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -195,8 +238,12 @@
               <h5 class="card-header">এক্সট্রা ভার্জিন নারিকেল তেল</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>২৫০ মিলি  - ৳৩০০</h5></li>
-                  <li class="list-group-item"><h5>৫০০ মিলি - ৳৫৮০</h5></li>
+                  <li class="list-group-item">
+                    <h5>২৫০ মিলি - ৳৩০০</h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h5>৫০০ মিলি - ৳৫৮০</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
@@ -209,7 +256,9 @@
               <h5 class="card-header">পাবনা থেকে ঢেঁকি ছাটা লাল আমন চাল</h5>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><h5>১ কেজি - ৳১৪৫</h5></li>
+                  <li class="list-group-item">
+                    <h5>১ কেজি - ৳১৪৫</h5>
+                  </li>
                 </ul>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
               </div>
